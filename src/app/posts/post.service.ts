@@ -1,12 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { InterfacePostService } from './interface-post-service';
 import { DataService } from './data.service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class PostService implements InterfacePostService{
+export class PostService{
 
   constructor(private dataService:DataService) { }
 
